@@ -1,0 +1,659 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+body {
+    overflow-x: hidden; /* Pipigilan ang anumang lalampas sa kanan ng screen */
+    width: 100%;
+    background-color: white;
+    
+}
+
+main{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*--------------------------------------------------------*/
+
+.header{
+    
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 5%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    z-index: 100;
+    height: 50px;
+    
+    /*
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 10%;
+    background: ; */
+
+}
+
+
+.headerfirstSpan,
+.headerhomeSpan,
+.headerpnpaSpan,
+.headerpmaSpan,
+.headerpmmaSpan,
+.headeraboutSpan{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin: 0%;
+    color: black;
+}
+
+.headerfirstSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerhomeSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpnpaSpan:hover{
+    color: red;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpmaSpan:hover{
+    color: gold;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpmmaSpan:hover{
+    color: blue;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headeraboutSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.3s ease;
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+.preparation{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow-x: hidden; /*idagdag ito ito sa lahat ng sections na may words at may line*/
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e0e0e0; /*PARA SA LINE SA BAWAT CATEGRORIES*/
+}
+
+.preparation h3 {
+    align-items: center; /* Pinapantay ang linya sa gitna ng teksto */
+    text-align: center;  /* Sinisigurong nasa gitna ang salita */
+    margin-bottom: 20px; /*- i-on if gusto i control yung layo ng h2 dun sa mga box or cards*/
+    margin-top: 20px;
+    width: 100%;
+}
+
+.preparation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    
+}
+
+
+.preparation-card-pnpa {
+    background-color: maroon;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466); /*para sa shadow sa likod nung card*/
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*margin-bottom: 40px;   - para to sa layo ng card and dun sa food categories*/
+    height: 100%;
+    
+}
+
+.preparation-card-pma {
+    background-color: grey;
+    color: whitesmoke   ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466); /*para sa shadow sa likod nung card*/
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*margin-bottom: 40px;   - para to sa layo ng card and dun sa food categories*/
+    height: 100%;
+}
+
+.preparation-card-pmma {
+    background-color: navy;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466); /*para sa shadow sa likod nung card*/
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /*margin-bottom: 40px;   - para to sa layo ng card and dun sa food categories*/
+    height: 100%;
+}
+
+.preparation-card-pnpa:hover,
+.preparation-card-pma:hover,
+.preparation-card-pmma:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.preparation img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+
+    /*
+    object-fit: cover;
+
+        Paano gumagana: Pinuputol (inaalis) nito ang gilid o taas/ibaba ng picture para mapuno ang buong sukat (width at height) na ibinigay mo.
+
+        Kailan ginagamit: Sa mga background photos, landscapes, o portraits na kailangang mapuno ang buong card nang walang natitirang blangkong espasyo.
+
+        Problema sa logo: Dahil inaayos nito ang ratio sa pamamagitan ng pag-crop, madalas napumutol ang mga mahalagang bahagi ng logos o badges (tulad ng nangyari sa PNPA crest mo).
+
+    object-fit: contain;
+
+        Paano gumagana: Pinagkakasya nito ang buong picture sa loob ng ibinigay mong sukat nang hindi ito pinuputol (kinicrop) o ginagawang mukhang pilit ang hugis.
+
+        Kailan ginagamit: Sa mga logos, badges, o product images kung saan kailangang kitang-kita ang 100% ng buong larawan.
+
+        Resulta: May posibilidad na magkaroon ng kaunting blangkong espasyo sa gilid o taas/ibaba, pero mananatiling buo at malinaw ang larawan.
+
+    */
+}
+
+.preparation h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-bottom: 2px solid #e0e0e0; /*PARA SA LINE SA BAWAT CATEGRORIES*/
+}
+
+.preparation h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.preparation p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+
+/*ito na for cards
+
+.admission-qualification{
+    text-align: center;
+    overflow-x: hidden; idagdag ito ito sa lahat ng sections na may words at may line
+    
+}
+
+.admission-qualification h2 {
+  text-align: center;   Sinisigurong nasa gitna ang salita /////////
+  margin-bottom: 20px; - i-on if gusto i control yung layo ng h2 dun sa mga box or cards////////
+}
+
+
+.admission-qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+//
+.admission-qualification-card {
+    text-align: center;
+    background-color: maroon;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466); para sa shadow sa likod nung card
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 40px;   - para to sa layo ng card and dun sa food categories
+    height: 250px;
+} //
+
+.admission-qualification-card {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 10px;
+
+    padding: 10px;
+    height: 250px;
+    box-sizing: border-box;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admission-qualification h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0 0 15px;
+}
+
+.admission-qualification p {
+    margin:0%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+} */
+
+/*-----*/
+.all-purpose{
+    border-bottom: 2px solid #e0e0e0; /*PARA SA LINE SA BAWAT CATEGRORIES*/
+}
+
+.purpose {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: stretch;
+    gap: 25px;
+    height: 200px;
+    
+}
+
+.purpose-image {
+    flex: 1;
+}
+
+.purpose-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.purpose-text {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.purpose-card {
+    flex: 1;
+    padding: 30px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+.academy-link {
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+
+.aspiring-h2 {
+    border-bottom: 2px solid #e0e0e0; /*PARA SA LINE SA BAWAT CATEGRORIES*/
+}
+
+/*---------*/
+.aspiring-h2 h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.aspiring-pnpa {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /*background: linear-gradient(darkred,darkgrey);*/
+    margin-bottom: 50px;
+    
+}
+
+.aspiring-pnpa-text {
+    flex: 1;
+}
+
+.aspiring-pnpa-text h2 {
+    margin-bottom: 16px;
+}
+
+.aspiring-pnpa-text h1 {
+    margin-bottom: 18px;
+}
+
+.aspiring-pnpa-text p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.aspiring-pnpa-image {
+    flex: 1;
+}
+
+.aspiring-pnpa-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.pnpaSpan{
+    font-weight: 800;
+    transition: 0.3s ease;
+    color: maroon;
+}
+
+.pnpaSpan:hover{
+    color: red;
+    text-shadow: 0 0 25px darkred;
+    transform: scale(1.05);
+}
+
+
+/*pma*/
+.aspiring-pma {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.aspiring-pma-text {
+    flex: 1;
+}
+
+.aspiring-pma-text h2 {
+    margin-bottom: 16px;
+}
+
+.aspiring-pma-text h1 {
+    margin-bottom: 20px;
+}
+
+.aspiring-pma-text p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/*
+.aspiring-pma-text h2 {
+    margin-bottom: 100px;
+}*/
+
+.aspiring-pma-image {
+    flex: 1;
+}
+
+.aspiring-pma-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.pmaSpan{
+    font-weight: 800;
+    transition: 0.3s ease;
+    color: rgb(75, 69, 69);
+}
+
+.pmaSpan:hover{
+    color: rgb(230, 228, 228);
+    text-shadow: 0 0 25px darkgray;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/*pmma*/
+.aspiring-pmma {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    
+}
+
+.aspiring-pmma-text {
+    flex: 1;
+}
+
+.aspiring-pmma-text h2 {
+    margin-bottom: 16px;
+}
+
+.aspiring-pmma-text h1 {
+    margin-bottom: 18px;
+    font-size: 27px;
+}
+
+.aspiring-pmma-text p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+
+/*
+.aspiring-pma-text h2 {
+    margin-bottom: 100px;
+}*/
+
+.aspiring-pmma-image {
+    flex: 1;
+}
+
+.aspiring-pmma-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.pmmaSpan{
+    font-weight: 800;
+    transition: 0.3s ease;
+    color: navy;
+}
+
+.pmmaSpan:hover{
+    color: rgb(167, 229, 250);
+    text-shadow: 0 0 25px darkblue;
+    transform: scale(1.05);
+}
+
+
+
+
+/*----------------footer-------------------*/
+
+.quote h3 {
+  text-align: center;  /* Sinisigurong nasa gitna ang salita */
+  margin-bottom: 30px;
+  margin-top: 80px;
+  font-style: italic;
+  font-size: 22px;
+}
+
+
+.split-hero2{
+    display: flex;
+    flex-direction: row; /*para ma revere yung ayos ng picture sa right */
+    height: 40vh;
+    width: 100%;
+    /*margin-bottom: 20px;*/
+}
+
+.hero-text2{
+    flex: 1;
+    color: black;
+    background-color: whitesmoke;/* Dark blue background */
+    padding: 50px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.hero-text2 h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-text2 p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.hero-button2 {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid black; /* Yellow border */
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.hero-button2:hover {
+    background-color: yellow;
+    color: red;
+}
+
+/* Kanang bahagi image */
+.hero-image2 {
+    flex: 1.5;
+}
+
+.hero-image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para hindi ma-distort/pumangit ang picture */
+    display: block;
+}
+
+
+/*---------------------------------------*/
+
+
+.exit1 {
+    display: flex;
+    justify-content: space-between; /* Naghihiwalay sa .left at .right papuntang dulo */
+    align-items: center;            /* Pantay na nakagitna vertically */
+    padding: 20px 8%;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Flexbox para sa mga links sa Kaliwa */
+.exit1 .left {
+    display: flex;
+    gap: 20px; /* Espasyo sa pagitan ng mga links */
+}
+
+/* Flexbox para sa mga items sa Kanan */
+.exit1 .right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espasyo sa pagitan ng Copyright, Site Credits, at Back To Top */
+}
+
+/* General Link Styling */
+.exit1 a {
+    text-decoration: none;
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.exit1 a:hover {
+    color: yellow;
+}
+
+/* Back To Top Accent Style */
+.exit1 .back-to-top {
+    color: red; /* Pulang kulay para sa arrow/text */
+    font-weight: bold;
+}   
+
+.developer-credit, .developer-info {
+    text-align: center;
+    color: #666666;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    padding-top: 15px;
+    /*border-top: 1px solid #e0e0e0;  Nipis na linya sa itaas para hiwalay sa links  */
+}
+
+.credits{
+    margin-bottom: 100px;
+}
