@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+    
+}
+
+body {
+    overflow-x: hidden; /* Pipigilan ang anumang lalampas sa kanan ng screen */
+    width: 100%;
+    background-color: white;
+    
+}
+
+main{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*--------------------------------------------------------*/
+
+.header{
+    
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 5%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    z-index: 100;
+    height: 50px;
+    
+    /*
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 25px 10%;
+    background: ; */
+
+}
+
+
+.headerfirstSpan,
+.headerhomeSpan,
+.headerpnpaSpan,
+.headerpmaSpan,
+.headerpmmaSpan,
+.headeraboutSpan{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin: 0%;
+    color: black;
+}
+
+.headerfirstSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerhomeSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpnpaSpan:hover{
+    color: red;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpmaSpan:hover{
+    color: gold;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headerpmmaSpan:hover{
+    color: blue;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.headeraboutSpan:hover{
+    color: yellow;
+    border-bottom: 2px solid;
+        transform: scale(1.2);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.3s ease;
+
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.breadcrumb {
+    padding: 15px 6%;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #555;
+}
+
+.breadcrumb span {
+    color: #999;
+    margin: 0 5px;
+}
+
+/*---------------------------------------------------------------*/
+
+
+.fullscreen {
+    background-image: url('../assets/geninfo.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.fullscreen .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.fullscreen h1{
+    position: relative;
+    z-index: 2;
+}
+
+.fullscreen h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+.topics{
+    text-align: left;
+    margin-bottom: 50px;
+    
+}
+.topics a{
+    margin-left: 20px;
+    line-height: 1.2;
+
+}
+.topics span:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.topics span{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    margin: 0%;
+    color: black;
+}
