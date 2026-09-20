@@ -585,7 +585,7 @@ main{
 .categories-card img {
     background-color: maroon; /* Kulay sa likod ng icon */
     border-radius: 50%;                    /* Para bilog na bilog (50% imbes na 50px) */
-    box-shadow: 0 4px 8px black;
+    box-shadow: 0 2px 4px black;
     padding: 20px;
     width: 150px;                          /* Fixed width para pantay ang bilog */
     height: 150px;                         /* Fixed height para pantay ang bilog */
