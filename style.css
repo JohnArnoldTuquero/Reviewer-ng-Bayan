@@ -657,3 +657,147 @@ main{
 .credits{
     margin-bottom: 100px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   ========================================== */
+
+/* Tablet View Adjustments (1024px pababa) */
+@media screen and (max-width: 1024px) {
+    main {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+}
+
+/* Mobile View Adjustments (768px pababa) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Main Container Padding Reset */
+    main {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+
+    /* 2. Header & Navigation Adjustments */
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        margin: 4px 6px;
+        font-size: 14px;
+    }
+
+    .headerfirstSpan,
+    .headerhomeSpan,
+    .headerpnpaSpan,
+    .headerpmaSpan,
+    .headerpmmaSpan,
+    .headeraboutSpan {
+        font-size: 15px;
+    }
+
+    /* 3. Purpose Section (REVIEW, PRACTICE, LEARN, PREPARE) */
+    .purpose {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .purpose-text {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .purpose-image img {
+        height: 200px;
+    }
+
+    .purpose-card {
+        padding: 20px 15px;
+    }
+
+    /* 4. Academy Sections (PNPA, PMA, PMMA Layouts) */
+    .aspiring-pnpa,
+    .aspiring-pma,
+    .aspiring-pmma {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    /* Invert PMA layout on mobile so text comes before image consistently */
+    .aspiring-pma {
+        flex-direction: column-reverse;
+    }
+
+    .aspiring-pnpa-image img,
+    .aspiring-pma-image img,
+    .aspiring-pmma-image img {
+        height: 200px;
+    }
+
+    /* 5. Footer & Split Hero Section */
+    .split-hero2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-text2 {
+        padding: 30px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-image2 img {
+        height: 220px;
+    }
+
+    /* 6. Footer Links & Credits */
+    .exit1 {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px 5%;
+    }
+
+    .exit1 .left,
+    .exit1 .right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .credits {
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+}
