@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reviewer ng Bayan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../../assets/PNPAPMAPMMA_LOGOWEB.png" type="image/x-icon">
+        <link href="styles/realnumberstyle.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="logo">
+                <a href="../../index.html">
+                <span class="headerfirstSpan">FREE REVIEWER</span>
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../index.html"><span class="headerhomeSpan">HOME</span></a>
+                <a href="../../PNPA/pnpaindex.html"><span class="headerpnpaSpan">PNPA</span></a>
+                <a href="../../PMA/pma.html"><span class="headerpmaSpan">PMA</span></a>
+                <a href="../../PMMA/pmma.html"><span class="headerpmmaSpan">PMMA</span></a>
+                <a href="../../PPSA/ppsa.html"><span class="headerpmmaSpan">PPSA</span></a>
+            </nav>
+
+            <div class="navbar">
+                <a href="../../ABOUT/about.html"><span class="headeraboutSpan">ABOUT US</span></a>
+            </div>
+            
+        </header>
+
+        <main>
+
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>→</span>
+                <a href="../../PNPA/pnpaindex.html"><span>PNPA</span></a>
+                <span>→</span>
+                <a href="../math.html"><span>Math</span></a>
+                <span>→</span>
+                <a href="../math-lessons/estimationandapproximation.html">
+                    <span>Estimation and Approximation</span>
+                </a>
+            </div>
+
+            <section class="fullscreen" id="top">
+                <div class="overlay"></div>
+                <h1>Estimation and Approximation</h1>
+            </section>
+
+            <section class="topics">
+                <h3>Table of Contents</h3><br>
+                <a href="#what"><span>- What is Estimation?</span></a><br>
+                <a href="#approximation"><span>- What is Approximation?</span></a><br>
+                <a href="#rounding"><span>- Rounding Numbers</span></a><br>
+                <a href="#nearestten"><span>- Rounding to the Nearest Ten</span></a><br>
+                <a href="#nearesthundred"><span>- Rounding to the Nearest Hundred</span></a><br>
+                <a href="#nearestthousand"><span>- Rounding to the Nearest Thousand</span></a><br>
+                <a href="#decimalrounding"><span>- Rounding Decimals</span></a><br>
+                <a href="#estimatingsums"><span>- Estimating Sums</span></a><br>
+                <a href="#estimatingdifferences"><span>- Estimating Differences</span></a><br>
+                <a href="#estimatingproducts"><span>- Estimating Products</span></a><br>
+                <a href="#estimatingquotients"><span>- Estimating Quotients</span></a><br>
+                <a href="#compatible"><span>- Using Compatible Numbers</span></a><br>
+                <a href="#wordproblems"><span>- Estimation in Word Problems</span></a><br>
+                <a href="#reasonableness"><span>- Checking for Reasonableness</span></a><br>
+                <a href="#summary"><span>- Summary</span></a><br>
+            </section>
+
+            <section class="lesson-content" id="what">
+                <h2>What is Estimation?</h2>
+
+                <p>
+                    Estimation is the process of finding a value that is close to an exact
+                    answer. Instead of calculating an exact result, we use numbers that are
+                    easier to work with.
+                </p>
+
+                <p>
+                    Estimation is useful when an exact answer is not necessary or when we
+                    want to quickly determine whether an answer is reasonable.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Suppose you want to estimate:
+                </p>
+
+                <p>
+                    398 + 201
+                </p>
+
+                <p>
+                    We can round the numbers:
+                </p>
+
+                <p>
+                    398 ≈ 400
+                </p>
+
+                <p>
+                    201 ≈ 200
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    398 + 201 ≈ 400 + 200 = <strong>600</strong>
+                </p>
+
+                <p>
+                    The exact answer is 599, while the estimated answer is 600.
+                    The estimate is very close to the exact answer.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="approximation">
+                <h2>What is Approximation?</h2>
+
+                <p>
+                    Approximation means representing a number or measurement with a value
+                    that is close to the exact value.
+                </p>
+
+                <p>
+                    The symbol <strong>≈</strong> means "approximately equal to."
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    π is approximately:
+                </p>
+
+                <p>
+                    <strong>π ≈ 3.14</strong>
+                </p>
+
+                <p>
+                    The value of π continues indefinitely, so 3.14 is an approximation
+                    rather than its exact value.
+                </p>
+
+                <h3>Estimation vs. Approximation</h3>
+
+                <p>
+                    Estimation usually involves finding a close answer quickly, often by
+                    rounding or using simpler numbers.
+                </p>
+
+                <p>
+                    Approximation is a broader idea of representing an exact value with
+                    a nearby value.
+                </p>
+
+                <p>
+                    Both are used when working with values where an exact result is
+                    unnecessary, difficult, or impossible to write conveniently.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="rounding">
+                <h2>Rounding Numbers</h2>
+
+                <p>
+                    Rounding is one of the most common methods of estimation.
+                    It replaces a number with a nearby value that is easier to use.
+                </p>
+
+                <h3>The Basic Rounding Rule</h3>
+
+                <p>
+                    Look at the digit immediately to the right of the place where you
+                    want to round.
+                </p>
+
+                <p>
+                    If the digit is <strong>5 or greater</strong>, increase the digit
+                    being rounded by 1.
+                </p>
+
+                <p>
+                    If the digit is <strong>4 or less</strong>, keep the digit being
+                    rounded unchanged.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Round 47 to the nearest ten.
+                </p>
+
+                <p>
+                    The ones digit is 7.
+                </p>
+
+                <p>
+                    Since 7 is greater than 5, increase the tens digit:
+                </p>
+
+                <p>
+                    <strong>47 ≈ 50</strong>
+                </p>
+
+                <h3>Another Example</h3>
+
+                <p>
+                    Round 42 to the nearest ten.
+                </p>
+
+                <p>
+                    The ones digit is 2.
+                </p>
+
+                <p>
+                    Since 2 is less than 5:
+                </p>
+
+                <p>
+                    <strong>42 ≈ 40</strong>
+                </p>
+            </section>
+
+            <section class="lesson-content" id="nearestten">
+                <h2>Rounding to the Nearest Ten</h2>
+
+                <p>
+                    To round a whole number to the nearest ten, look at the ones digit.
+                </p>
+
+                <p>
+                    If the ones digit is 5 or more, round up.
+                </p>
+
+                <p>
+                    If the ones digit is 4 or less, round down.
+                </p>
+
+                <h3>Examples</h3>
+
+                <p>
+                    34 → <strong>30</strong>
+                </p>
+
+                <p>
+                    35 → <strong>40</strong>
+                </p>
+
+                <p>
+                    67 → <strong>70</strong>
+                </p>
+
+                <p>
+                    82 → <strong>80</strong>
+                </p>
+
+                <p>
+                    96 → <strong>100</strong>
+                </p>
+
+                <h3>Larger Number</h3>
+
+                <p>
+                    Consider 4,327.
+                </p>
+
+                <p>
+                    The ones digit is 7, so round the tens digit up:
+                </p>
+
+                <p>
+                    <strong>4,327 ≈ 4,330</strong>
+                </p>
+            </section>
+
+            <section class="lesson-content" id="nearesthundred">
+                <h2>Rounding to the Nearest Hundred</h2>
+
+                <p>
+                    To round to the nearest hundred, look at the tens digit.
+                </p>
+
+                <p>
+                    If the tens digit is 5 or greater, round the hundreds digit up.
+                </p>
+
+                <p>
+                    If the tens digit is 4 or less, keep the hundreds digit unchanged.
+                </p>
+
+                <h3>Examples</h3>
+
+                <p>
+                    342 → <strong>300</strong>
+                </p>
+
+                <p>
+                    368 → <strong>400</strong>
+                </p>
+
+                <p>
+                    1,249 → <strong>1,200</strong>
+                </p>
+
+                <p>
+                    1,250 → <strong>1,300</strong>
+                </p>
+
+                <p>
+                    5,781 → <strong>5,800</strong>
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Round 7,463 to the nearest hundred.
+                </p>
+
+                <p>
+                    The tens digit is 6.
+                </p>
+
+                <p>
+                    Since 6 is greater than 5, round up:
+                </p>
+
+                <p>
+                    <strong>7,463 ≈ 7,500</strong>
+                </p>
+            </section>
+
+            <section class="lesson-content" id="nearestthousand">
+                <h2>Rounding to the Nearest Thousand</h2>
+
+                <p>
+                    To round to the nearest thousand, look at the hundreds digit.
+                </p>
+
+                <p>
+                    If the hundreds digit is 5 or greater, round up.
+                </p>
+
+                <p>
+                    If the hundreds digit is 4 or less, round down.
+                </p>
+
+                <h3>Examples</h3>
+
+                <p>
+                    3,241 → <strong>3,000</strong>
+                </p>
+
+                <p>
+                    3,651 → <strong>4,000</strong>
+                </p>
+
+                <p>
+                    8,499 → <strong>8,000</strong>
+                </p>
+
+                <p>
+                    8,500 → <strong>9,000</strong>
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Round 27,634 to the nearest thousand.
+                </p>
+
+                <p>
+                    The hundreds digit is 6.
+                </p>
+
+                <p>
+                    Since 6 is greater than 5, round up:
+                </p>
+
+                <p>
+                    <strong>27,634 ≈ 28,000</strong>
+                </p>
+            </section>
+
+            <section class="lesson-content" id="decimalrounding">
+                <h2>Rounding Decimals</h2>
+
+                <p>
+                    Decimals can also be rounded to a specified place value such as the
+                    nearest whole number, tenth, hundredth, or thousandth.
+                </p>
+
+                <h3>Nearest Whole Number</h3>
+
+                <p>
+                    Look at the tenths digit.
+                </p>
+
+                <p>
+                    Example:
+                </p>
+
+                <p>
+                    7.6 ≈ <strong>8</strong>
+                </p>
+
+                <p>
+                    7.3 ≈ <strong>7</strong>
+                </p>
+
+                <h3>Nearest Tenth</h3>
+
+                <p>
+                    Look at the hundredths digit.
+                </p>
+
+                <p>
+                    Example:
+                </p>
+
+                <p>
+                    4.26 ≈ <strong>4.3</strong>
+                </p>
+
+                <p>
+                    8.21 ≈ <strong>8.2</strong>
+                </p>
+
+                <h3>Nearest Hundredth</h3>
+
+                <p>
+                    Look at the thousandths digit.
+                </p>
+
+                <p>
+                    Example:
+                </p>
+
+                <p>
+                    3.146 ≈ <strong>3.15</strong>
+                </p>
+
+                <p>
+                    5.732 ≈ <strong>5.73</strong>
+                </p>
+            </section>
+
+            <section class="lesson-content" id="estimatingsums">
+                <h2>Estimating Sums</h2>
+
+                <p>
+                    To estimate a sum, round the numbers to convenient values and then
+                    add them.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    487 + 312
+                </p>
+
+                <p>
+                    Round to the nearest hundred:
+                </p>
+
+                <p>
+                    487 ≈ 500
+                </p>
+
+                <p>
+                    312 ≈ 300
+                </p>
+
+                <p>
+                    Add:
+                </p>
+
+                <p>
+                    500 + 300 = <strong>800</strong>
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    <strong>487 + 312 ≈ 800</strong>
+                </p>
+
+                <p>
+                    The exact answer is 799, so the estimate is very close.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="estimatingdifferences">
+                <h2>Estimating Differences</h2>
+
+                <p>
+                    To estimate a difference, round the numbers before subtracting.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    1,982 − 641
+                </p>
+
+                <p>
+                    Round to the nearest hundred:
+                </p>
+
+                <p>
+                    1,982 ≈ 2,000
+                </p>
+
+                <p>
+                    641 ≈ 600
+                </p>
+
+                <p>
+                    Subtract:
+                </p>
+
+                <p>
+                    2,000 − 600 = <strong>1,400</strong>
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    <strong>1,982 − 641 ≈ 1,400</strong>
+                </p>
+
+                <p>
+                    The exact answer is 1,341.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="estimatingproducts">
+                <h2>Estimating Products</h2>
+
+                <p>
+                    A product is the result of multiplication.
+                    To estimate a product, round the factors to convenient numbers
+                    before multiplying.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    49 × 21
+                </p>
+
+                <p>
+                    Round the factors:
+                </p>
+
+                <p>
+                    49 ≈ 50
+                </p>
+
+                <p>
+                    21 ≈ 20
+                </p>
+
+                <p>
+                    Multiply:
+                </p>
+
+                <p>
+                    50 × 20 = <strong>1,000</strong>
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    <strong>49 × 21 ≈ 1,000</strong>
+                </p>
+
+                <p>
+                    The exact answer is 1,029.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="estimatingquotients">
+                <h2>Estimating Quotients</h2>
+
+                <p>
+                    A quotient is the result of division.
+                    To estimate a quotient, use numbers that are easy to divide.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    398 ÷ 8
+                </p>
+
+                <p>
+                    Use a nearby compatible number:
+                </p>
+
+                <p>
+                    400 ÷ 8 = <strong>50</strong>
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    <strong>398 ÷ 8 ≈ 50</strong>
+                </p>
+
+                <p>
+                    The exact quotient is 49.75, so 50 is a reasonable estimate.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="compatible">
+                <h2>Using Compatible Numbers</h2>
+
+                <p>
+                    Compatible numbers are numbers that work well together in mental
+                    calculations. They are especially useful when estimating division.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    624 ÷ 8
+                </p>
+
+                <p>
+                    624 is already divisible by 8:
+                </p>
+
+                <p>
+                    624 ÷ 8 = 78
+                </p>
+
+                <p>
+                    But consider:
+                </p>
+
+                <p>
+                    617 ÷ 8
+                </p>
+
+                <p>
+                    We can use 616 because it is close to 617 and is easily divisible
+                    by 8:
+                </p>
+
+                <p>
+                    616 ÷ 8 = <strong>77</strong>
+                </p>
+
+                <p>
+                    Therefore:
+                </p>
+
+                <p>
+                    <strong>617 ÷ 8 ≈ 77</strong>
+                </p>
+
+                <p>
+                    Compatible numbers make estimation faster and easier.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="wordproblems">
+                <h2>Estimation in Word Problems</h2>
+
+                <p>
+                    Estimation is useful in real-life situations where an exact answer
+                    may not be necessary.
+                </p>
+
+                <h3>Example: Shopping</h3>
+
+                <p>
+                    You want to buy items costing ₱198, ₱302, and ₱97.
+                    About how much money will you need?
+                </p>
+
+                <p>
+                    Round the prices:
+                </p>
+
+                <p>
+                    ₱198 ≈ ₱200
+                </p>
+
+                <p>
+                    ₱302 ≈ ₱300
+                </p>
+
+                <p>
+                    ₱97 ≈ ₱100
+                </p>
+
+                <p>
+                    Add:
+                </p>
+
+                <p>
+                    ₱200 + ₱300 + ₱100 = <strong>₱600</strong>
+                </p>
+
+                <p>
+                    Therefore, you will need approximately <strong>₱600</strong>.
+                </p>
+
+                <h3>Example: Distance</h3>
+
+                <p>
+                    A person travels 48 km in the morning and 53 km in the afternoon.
+                    Estimate the total distance traveled.
+                </p>
+
+                <p>
+                    48 ≈ 50
+                </p>
+
+                <p>
+                    53 ≈ 50
+                </p>
+
+                <p>
+                    50 + 50 = <strong>100 km</strong>
+                </p>
+
+                <p>
+                    The estimated total distance is approximately 100 km.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="reasonableness">
+                <h2>Checking for Reasonableness</h2>
+
+                <p>
+                    Estimation can be used to determine whether an exact answer makes
+                    sense. This is called checking for reasonableness.
+                </p>
+
+                <h3>Example</h3>
+
+                <p>
+                    Suppose someone calculates:
+                </p>
+
+                <p>
+                    49 × 21 = 10,290
+                </p>
+
+                <p>
+                    Is the answer reasonable?
+                </p>
+
+                <p>
+                    Estimate:
+                </p>
+
+                <p>
+                    49 ≈ 50
+                </p>
+
+                <p>
+                    21 ≈ 20
+                </p>
+
+                <p>
+                    50 × 20 = 1,000
+                </p>
+
+                <p>
+                    The estimated answer is around 1,000, but 10,290 is much larger.
+                    Therefore, the calculated answer is not reasonable.
+                </p>
+
+                <p>
+                    In fact:
+                </p>
+
+                <p>
+                    49 × 21 = <strong>1,029</strong>
+                </p>
+
+                <p>
+                    Estimation is therefore a useful way to catch calculation errors.
+                </p>
+            </section>
+
+            <section class="lesson-content" id="summary">
+                <h2>Summary</h2>
+
+                <p>
+                    Estimation is finding a value that is close to an exact answer.
+                    Approximation represents an exact value using a nearby value.
+                </p>
+
+                <h3>Important Rules</h3>
+
+                <p>
+                    <strong>Rounding:</strong> Look at the digit immediately to the
+                    right of the place you are rounding.
+                </p>
+
+                <p>
+                    <strong>5 or greater:</strong> Round up.
+                </p>
+
+                <p>
+                    <strong>4 or less:</strong> Keep the digit unchanged.
+                </p>
+
+                <p>
+                    <strong>Estimating sums:</strong> Round and add.
+                </p>
+
+                <p>
+                    <strong>Estimating differences:</strong> Round and subtract.
+                </p>
+
+                <p>
+                    <strong>Estimating products:</strong> Round and multiply.
+                </p>
+
+                <p>
+                    <strong>Estimating quotients:</strong> Use convenient or compatible
+                    numbers and divide.
+                </p>
+
+                <p>
+                    Estimation is especially useful for making quick calculations,
+                    solving real-life problems, and checking whether an answer is
+                    reasonable.
+                </p>
+
+                <h3>Quick Examples</h3>
+
+                <p>
+                    398 + 201 ≈ <strong>600</strong>
+                </p>
+
+                <p>
+                    1,982 − 641 ≈ <strong>1,400</strong>
+                </p>
+
+                <p>
+                    49 × 21 ≈ <strong>1,000</strong>
+                </p>
+
+                <p>
+                    398 ÷ 8 ≈ <strong>50</strong>
+                </p>
+
+                <p>
+                    The key idea is to choose numbers that are close to the original
+                    values but easier to calculate with.
+                </p>
+            </section>
+
+        </main>
+
+    </body>
+</html>
