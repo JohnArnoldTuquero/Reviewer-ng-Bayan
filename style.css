@@ -698,11 +698,12 @@ main{
     }
 
     /* 2. Header & Navigation Adjustments */
-    .header {
+        .header {
+        position: static;
         flex-direction: column;
         height: auto;
-        padding: 15px 20px;
-        gap: 12px;
+        padding: 12px 15px;
+        gap: 6px;
     }
 
     .navbar {
@@ -799,5 +800,70 @@ main{
     .credits {
         margin-bottom: 40px;
         padding: 0 15px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (hover: none) {
+    .preparation-card-pnpa:hover,
+    .preparation-card-pma:hover,
+    .preparation-card-pmma:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .navbar a {
+        padding: 8px 4px;
+        font-size: 13px;
+    }
+
+    .preparation h2,
+    .aspiring-h2 h2 {
+        font-size: 1.05rem;
+        padding: 0 5px;
+    }
+
+    .aspiring-pnpa-text h1,
+    .aspiring-pma-text h1,
+    .aspiring-pmma-text h1 {
+        font-size: 22px;
+    }
+
+    .aspiring-pnpa-text p,
+    .aspiring-pma-text p,
+    .aspiring-pmma-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .purpose-image img,
+    .aspiring-pnpa-image img,
+    .aspiring-pma-image img,
+    .aspiring-pmma-image img {
+        height: 180px;
+    }
+
+    .quote h3 {
+        margin-top: 40px;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .hero-text2 h1 {
+        font-size: 24px;
+    }
+
+    .hero-button2 {
+        width: 100%;
+        text-align: center;
     }
 }
